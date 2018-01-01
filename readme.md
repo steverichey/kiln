@@ -1,9 +1,21 @@
-# kotlin game engine
+# kiln
+
+Kiln is a highly opinionated 2D game engine. Some of these opinions are good.
 
 ## Goals
-* Fast native rendering
+
+### Short-term
+* OpenGL rendering
 * Windows, Linux, Mac, and web support
-* Simple 2D with 3D to come later
+* Minimal or no global state
+* Understandable syntax
+
+### Long-term
+* 3D support
+* iOS and Android support
+
+### Non-goals
+* Efficiency at the cost of ease of use
 
 ## Why Kotlin?
 * Static typing
@@ -13,6 +25,34 @@
 * Runs on the JVM, which runs everywhere
 * Evolving support for native and JavaScript targets
 * No semicolons
+
+## Target syntax
+
+This is an evolving target, but the hope is that something like the below would work.
+
+```
+class Game: KilnGame {
+  val sprite = KilnSprite(16, 16)
+
+  fun update() {
+    sprite.position.x += 1
+    sprite.position.y += 1
+
+    if (sprite.position.x > screen.bounds.x) {
+      sprite.position.x = 0
+    }
+
+    if (sprite.position.y > screen.bounds.y) {
+      sprite.position.y = 0
+    }
+  }
+}
+
+fun main() {
+  val game = Game(640, 480)
+  game.start()
+}
+```
 
 ## License
 
