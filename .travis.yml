@@ -2,9 +2,6 @@ language: generic
 dist: trusty
 os: linux
 
-before_script:
-  - xmllint --version
-
 script:
   - sh clean.sh ; sh build.sh ; sh run.sh
 
