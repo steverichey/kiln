@@ -4,8 +4,11 @@ set -eur
 
 mkdir build
 
+FILES=`find source -type f -name "*.kt"`
+
 echo "Building..."
-kotlinc source/*.kt \
+kotlinc ${FILES} \
   -include-runtime \
-  -d \
-  build/out.jar
+  -Werror \
+  -verbose \
+  -d build/out.jar

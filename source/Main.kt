@@ -1,4 +1,10 @@
+import kiln.swing.Window
+import kiln.swing.CloseOperation
+
 // start here
 fun main(args: Array<String>) {
-  print("hi from Main.kt\n")
+  val window = Window(640, 480)
+  window.title = "KilnDemo"
+  window.defaultCloseOperation = CloseOperation.Exit
+  window.show()
 }

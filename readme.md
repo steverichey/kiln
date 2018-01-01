@@ -13,7 +13,7 @@ Kiln is a highly opinionated 2D game engine. Some of these opinions are good. Th
 * Design with testability in mind
 
 ### Long-term
-* Native compilation
+* Native targets
 * 3D support
 * iOS and Android support
 
