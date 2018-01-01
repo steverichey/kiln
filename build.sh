@@ -1,5 +1,11 @@
 #!/bin/sh
 
-rm -rf build
+set -eur
+
 mkdir build
-kotlinc source/Main.kt -include-runtime -d build/out.jar
+
+echo "Building..."
+kotlinc source/*.kt \
+  -include-runtime \
+  -d \
+  build/out.jar

@@ -1,3 +1,6 @@
 #!/bin/sh
 
-git clean -xdf
+set -eur
+
+echo "Cleaning..."
+rm -rf build

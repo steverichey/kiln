@@ -1,21 +1,26 @@
 # kiln
 
-Kiln is a highly opinionated 2D game engine. Some of these opinions are good.
+Kiln is a highly opinionated 2D game engine. Some of these opinions are good. The main goal of this is rapid prototyping of game ideas with minimal friction, without reliance on closed-source solutions (e.g. Unity3D) while also enabling the build and distribution of games without reliance on antiquated technology (e.g. Stencyl's reliance on Flash).
 
 ## Goals
 
 ### Short-term
 * OpenGL rendering
-* Windows, Linux, Mac, and web support
+* Windows, Linux, and Mac support (via JVM)
 * Minimal or no global state
 * Understandable syntax
+* Use functional programming where appropriate
+* Design with testability in mind
 
 ### Long-term
+* Native compilation
 * 3D support
 * iOS and Android support
 
 ### Non-goals
 * Efficiency at the cost of ease of use
+* Strict adherence to functional programming paradigms
+* 100% code coverage
 
 ## Why Kotlin?
 * Static typing
