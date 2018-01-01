@@ -1,4 +1,4 @@
-# kiln
+# kiln [![Build Status](https://travis-ci.org/steverichey/kiln.svg?branch=master)](https://travis-ci.org/steverichey/kiln)
 
 Kiln is a highly opinionated 2D game engine. Some of these opinions are good. The main goal of this is rapid prototyping of game ideas with minimal friction, without reliance on closed-source solutions (e.g. Unity3D) while also enabling the build and distribution of games without reliance on antiquated technology (e.g. Stencyl's reliance on Flash).
 
