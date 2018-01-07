@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -eur
+set -eu
 
 mkdir build
 
