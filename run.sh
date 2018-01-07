@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -eur
+set -eu
 
 echo "Running..."
 java -jar build/out.jar
